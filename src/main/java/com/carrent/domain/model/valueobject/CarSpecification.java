@@ -13,7 +13,7 @@ public class CarSpecification {
     @Column(name = "model", nullable = false)
     String model;
     
-    @Column(name = "year", nullable = false)
+    @Column(name = "production_year", nullable = false)
     Integer year;
     
     @Column(name = "color")
