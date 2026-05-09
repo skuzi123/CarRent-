@@ -1,10 +1,10 @@
 package com.carrent.presentation.controller;
 
-import com.carrent.application.command.CreateCustomerCommand;
-import com.carrent.application.command.handler.CreateCustomerCommandHandler;
-import com.carrent.application.dto.CustomerDTO;
-import com.carrent.application.query.GetCustomerQuery;
-import com.carrent.application.query.handler.GetCustomerQueryHandler;
+import com.carrent.boundedcontext.customer.application.command.CreateCustomerCommand;
+import com.carrent.boundedcontext.customer.application.command.handler.CreateCustomerCommandHandler;
+import com.carrent.boundedcontext.customer.application.dto.CustomerDTO;
+import com.carrent.boundedcontext.customer.application.query.GetCustomerQuery;
+import com.carrent.boundedcontext.customer.application.query.handler.GetCustomerQueryHandler;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

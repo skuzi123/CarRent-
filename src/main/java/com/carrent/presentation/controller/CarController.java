@@ -1,12 +1,12 @@
 package com.carrent.presentation.controller;
 
-import com.carrent.application.command.CreateCarCommand;
-import com.carrent.application.command.handler.CreateCarCommandHandler;
-import com.carrent.application.dto.CarDTO;
-import com.carrent.application.query.GetAvailableCarsQuery;
-import com.carrent.application.query.GetCarQuery;
-import com.carrent.application.query.handler.GetAvailableCarsQueryHandler;
-import com.carrent.application.query.handler.GetCarQueryHandler;
+import com.carrent.boundedcontext.car.application.command.CreateCarCommand;
+import com.carrent.boundedcontext.car.application.command.handler.CreateCarCommandHandler;
+import com.carrent.boundedcontext.car.application.dto.CarDTO;
+import com.carrent.boundedcontext.car.application.query.GetAvailableCarsQuery;
+import com.carrent.boundedcontext.car.application.query.GetCarQuery;
+import com.carrent.boundedcontext.car.application.query.handler.GetAvailableCarsQueryHandler;
+import com.carrent.boundedcontext.car.application.query.handler.GetCarQueryHandler;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

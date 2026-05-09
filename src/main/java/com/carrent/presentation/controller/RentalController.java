@@ -1,16 +1,16 @@
 package com.carrent.presentation.controller;
 
-import com.carrent.application.command.CancelRentalCommand;
-import com.carrent.application.command.RentCarCommand;
-import com.carrent.application.command.ReturnCarCommand;
-import com.carrent.application.command.handler.CancelRentalCommandHandler;
-import com.carrent.application.command.handler.RentCarCommandHandler;
-import com.carrent.application.command.handler.ReturnCarCommandHandler;
-import com.carrent.application.dto.RentalDTO;
-import com.carrent.application.query.GetCustomerRentalsQuery;
-import com.carrent.application.query.GetRentalQuery;
-import com.carrent.application.query.handler.GetCustomerRentalsQueryHandler;
-import com.carrent.application.query.handler.GetRentalQueryHandler;
+import com.carrent.boundedcontext.rental.application.command.CancelRentalCommand;
+import com.carrent.boundedcontext.rental.application.command.RentCarCommand;
+import com.carrent.boundedcontext.rental.application.command.ReturnCarCommand;
+import com.carrent.boundedcontext.rental.application.command.handler.CancelRentalCommandHandler;
+import com.carrent.boundedcontext.rental.application.command.handler.RentCarCommandHandler;
+import com.carrent.boundedcontext.rental.application.command.handler.ReturnCarCommandHandler;
+import com.carrent.boundedcontext.rental.application.dto.RentalDTO;
+import com.carrent.boundedcontext.rental.application.query.GetCustomerRentalsQuery;
+import com.carrent.boundedcontext.rental.application.query.GetRentalQuery;
+import com.carrent.boundedcontext.rental.application.query.handler.GetCustomerRentalsQueryHandler;
+import com.carrent.boundedcontext.rental.application.query.handler.GetRentalQueryHandler;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
