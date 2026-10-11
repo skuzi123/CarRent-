@@ -3,7 +3,7 @@ spring:
     name: car-rental-application
   
   datasource:
-    url: jdbc:h2:mem:carrentdb
+    url: jdbc:h2:mem:carrentdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS car\;CREATE SCHEMA IF NOT EXISTS customer\;CREATE SCHEMA IF NOT EXISTS rental
     driver-class-name: org.h2.Driver
     username: sa
     password: 
@@ -16,11 +16,16 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
+    defer-datasource-initialization: true
     show-sql: true
     properties:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.H2Dialect
+        hbm2ddl.create_namespaces: true
+  sql:
+    init:
+      mode: always
   
   # For PostgreSQL (uncomment when using PostgreSQL)
   # datasource:
